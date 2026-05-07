@@ -7,6 +7,10 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnggotaController;
 
+Route::get('/', function () {
+    return 'RN Control System Railway OK';
+});
+
 /*
 |--------------------------------------------------------------------------
 | REDIRECT AWAL
