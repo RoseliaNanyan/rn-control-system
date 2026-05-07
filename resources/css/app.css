@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* ================= PAGE ================= */
+    .page-title {
+        @apply text-xl font-semibold mb-1;
+    }
+
+    .page-subtitle {
+        @apply text-sm text-gray-500;
+    }
+
+    /* ================= CARD ================= */
+    .card {
+        @apply bg-white rounded-xl p-5 shadow-sm border border-gray-100;
+    }
+
+    
+    /* ================= GRID ================= */
+    .grid-3 {
+        @apply grid grid-cols-3 gap-4;
+    }
+
+    /* ================= BUTTON ================= */
+    .btn {
+    @apply inline-flex items-center justify-center rounded-lg font-medium transition;
+    }
+
+    .btn-primary {
+        @apply bg-blue-600 text-white hover:bg-blue-700;
+    }
+
+    .btn-danger {
+        @apply bg-red-600 text-white hover:bg-red-700;
+    }
+
+    .btn-gray {
+        @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+    }
+
+    .btn-sm {
+        @apply px-3 py-1.5 text-xs;
+    }
+
+    .input {
+    @apply border border-gray-300 rounded-lg px-3 text-sm w-full;
+    height: 42px;
+        }
+
+        .btn-md {
+            @apply px-4 text-sm;
+            height: 42px;
+        }
+
+    /* ================= FILTER ================= */
+    .filter {
+        @apply flex gap-3 items-center;
+    }
+
+    /* ================= TABLE ================= */
+    .table {
+        @apply w-full text-sm;
+    }
+
+    .table th {
+        @apply bg-gray-100 p-3 font-semibold;
+    }
+
+    .table td {
+        @apply p-3 border-b border-gray-100;
+    }
+
+    
+    /* CIF & Nama rata kiri */
+.table th:nth-child(1),
+.table td:nth-child(1),
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    @apply text-left;
+}
+
+/* sisanya tengah */
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    @apply text-right;
+}
+.table th:nth-child(4),
+.table td:nth-child(4),
+.table th:nth-child(5),
+.table td:nth-child(5),
+.table th:nth-child(6),
+.table td:nth-child(6) {
+    @apply text-center;
+}
+
+    /* ================= BADGE ================= */
+    .badge {
+        @apply px-3 py-1 text-xs rounded-full font-medium inline-block;
+    }
+
+    .badge.success {
+        @apply bg-green-100 text-green-700;
+    }
+
+    .badge.warning {
+        @apply bg-yellow-100 text-yellow-700;
+    }
+
+    .badge.danger {
+        @apply bg-red-100 text-red-700;
+    }
+
+    /* ================= STAT ================= */
+    .stat-card {
+    @apply p-5 rounded-xl bg-white shadow border border-gray-200;
+}
+    .stat-card.success {
+        @apply bg-green-100 text-green-700 border-l-4 border-green-600;
+    }
+
+    .stat-card.danger {
+        @apply bg-red-100 text-red-700 border-l-4 border-red-600;
+    }
+/* zebra rows seperti excel */
+.table tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+}
+
+.table tbody tr:nth-child(odd) {
+    @apply bg-white;
+}
+.table tbody tr:hover {
+    @apply bg-blue-50;
+}
+.card-header {
+    @apply flex justify-between items-center;
+}
+.btn-success {
+    @apply bg-green-600 text-white hover:bg-green-700;
+}
+.btn-warning {
+    @apply bg-yellow-500 text-white hover:bg-yellow-600;
+}
+.table td:last-child {
+    @apply text-center;
+}
+}
